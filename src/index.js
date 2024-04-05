@@ -73,6 +73,7 @@ app.delete('/comentarios/:id', eliminarComentarioId)
 // mostrar cada publicacion con sus comentarios
 app.get('/comentarios/:id', publiConComentariosId)
 
+// ruta al swagger de la API
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 
 app.listen(PORT, () => console.log(`servidor levantado en http://localhost:${PORT}`))
